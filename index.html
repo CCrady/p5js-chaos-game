@@ -25,13 +25,13 @@
 			color: #ff324b;
 		}
 		
-		p {
-			margin: 0em 0em 0.4em;
-		}
-		
 		ul {
 			margin: 0px;
 			padding-left: 1.2em;
+		}
+		
+		div .break {
+			height: 0.4em;
 		}
 		
 		#info {
@@ -86,15 +86,16 @@
 	
 	<div id="modal" style="display: none;">
 		<img src="material-close-icon.svg" id="close" width="24px" height="24px" onclick="hideModal()">
-		<p>
-			This <a href="http://p5js.org">p5.js</a> sketch simulates a chaos game. The game starts with several static points (shown in pink here) and a single moving point (in black). In the first round, one of the static points is chosen at random. The moving point then moves halfway towards that point, leaving a dot behind. In each succeeding round, a static point which is not the same one as in the previous round is chosen at random, and the moving point again moves halfway towards it.
-		</p>
+		This application simulates a chaos game. The game starts with several static points (shown in pink here) and a single moving point (in black). In the first round, one of the static points is chosen at random. The moving point then moves halfway towards that point, leaving a dot behind. In each succeeding round, a static point which is not the same one as in the previous round is chosen at random, and the moving point again moves halfway towards it.
+		<div class="break"></div>
 		Controls:
 		<ul>
 			<li>UP ARROW: Add a static point</li>
 			<li>DOWN ARROW: Delete the static point the cursor is hovering over</li>
 			<li>LEFT CLICK: Start the moving point at the cursor's position</li>
 		</ul>
+		<div class="break"></div>
+		Created by <a href="https://github.com/CCrady">@CCrady</a> using <a href="http://p5js.org">p5.js</a>
 	</div>
 	
 </body>
